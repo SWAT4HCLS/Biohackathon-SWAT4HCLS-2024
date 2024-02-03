@@ -1,0 +1,101 @@
+name: FAIR Data Point Submission
+description: Use this form to submit new FAIR Data Point data for inclusion in the triple store.
+title: "FDP Submission: [Title]"
+body:
+  - type: markdown
+    attributes:
+      value: "## Basic Information"
+  - type: input
+    attributes:
+      label: Title
+      description: "Enter the title of the dataset or resource."
+      placeholder: "Example: Duchenne Parent Project: FAIR Data"
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: Version
+      description: "Enter the version of the dataset."
+      placeholder: "Example: 1.0"
+      validations:
+        required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: "Provide a brief description of the dataset."
+      placeholder: "Clinical and Patient Reported data for Duchenne and Becker muscular dystrophy patients."
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: Keywords
+      description: "Enter keywords associated with the dataset, separated by commas."
+      placeholder: "Becker Muscular Dystrophy, Duchenne Muscular Dystrophy"
+  - type: markdown
+    attributes:
+      value: "## Metadata Details"
+  - type: datetime
+    attributes:
+      label: Metadata Issued Date
+      description: "Select the date and time when the metadata was issued."
+      validations:
+        required: true
+  - type: datetime
+    attributes:
+      label: Metadata Modified Date
+      description: "Select the date and time when the metadata was last modified."
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: Metadata Identifier
+      description: "Enter the URL or identifier for the metadata."
+      placeholder: "https://w3id.org/duchenne-fdp#identifier"
+      validations:
+        required: true
+  - type: markdown
+    attributes:
+      value: "## Access and Rights"
+  - type: textarea
+    attributes:
+      label: Access Rights Description
+      description: "Describe the access rights for this resource."
+      placeholder: "This resource has no access restriction."
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: Publisher Name
+      description: "Enter the name of the publisher."
+      placeholder: "Duchenne Parent Project"
+      validations:
+        required: true
+  - type: markdown
+    attributes:
+      value: "## Technical Information"
+  - type: input
+    attributes:
+      label: Endpoint URL
+      description: "Enter the URL(s) for the data service endpoint."
+      placeholder: "https://w3id.org/duchenne-fdp"
+  - type: markdown
+    attributes:
+      value: "## Contact Point"
+  - type: input
+    attributes:
+      label: Contact URL
+      description: "Enter the URL for the contact point."
+      placeholder: "https://www.worldduchenne.org/"
+      validations:
+        required: true
+  - type: markdown
+    attributes:
+      value: "## Submission Confirmation"
+  - type: checkboxes
+    attributes:
+      label: Confirmation
+      description: "Please confirm that all provided information is correct and you have the right to submit it."
+      options:
+        - label: "I confirm that the information provided is accurate and I have the right to submit this data."
+          required: true
+
