@@ -1,0 +1,35 @@
+name: SWAT4HCLS Biohackathon Project Proposal 2024
+description: Submit a project proposal for Biohackathon-SWAT4HCLS
+title: "[Proposal]: "
+labels: ["2024", "proposal"]
+assignees:
+  - andrawaag
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a project for the Biohackathon-SWAT4HCLS! We appreciate your effort and interest in contributing to the themes of bioinformatics, agriculture, Semantic Web, and biodiversity.
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+      description: Concisely describe your project proposal
+      placeholder: "Your Project Title Here"
+      value: "Exploring ....."
+    validations:
+      required: true
+  - type: textarea
+    id: projectidea
+    attributes:
+      label: Project Description
+      description: Please describe in detail what you would like to achieve with your project.
+    validations:
+      required: true
+  - type: textarea
+    id: needs
+    attributes:
+      label: Expertise Needed
+      description: What assistance do you need? What specific expertise are you seeking?
+    validations:
+      required: true
+
